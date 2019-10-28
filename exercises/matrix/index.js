@@ -15,6 +15,31 @@
 //     [11, 16, 15, 6],
 //     [10,  9,  8, 7]]
 
-function matrix(n) {}
+function matrix(n) {
+    let results = [];
+    let counter = 1;
+    let startRow = 0, startCol = 0
+    let endRow = n - 1, endCol = n - 1
+    if (startRow <= endRow && startCol <= endCol) {
+        for (startCol; startCol < endCol; startCol++) {
+
+        }
+    }
+}
+
+var twoSum = function (numbers, target) {
+    let answer = []
+    for (let i = 0; i < numbers.length; i++) {
+        for (let j = i + 1; j < numbers.length; j++) {
+            if (numbers[i] + numbers[j] === target) {
+                answer.push(i + 1, j + 1)
+            }
+        }
+    }
+    return answer
+
+};
+
+console.log(twoSum([2, 7, 11, 15], 9))
 
 module.exports = matrix;
